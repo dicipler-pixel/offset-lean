@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these Lean proofs, please cite them as below."
+title: "The Offset Belongs to the Boundary: Lean proofs"
+authors:
+  - family-names: "Beasley"
+    given-names: "Jeromie"
+version: 1.0.0
+date-released: 2026-09-26
+license: MIT
+repository-code: "https://github.com/dicipler-pixel/offset-lean"
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - entanglement Hamiltonian
+  - free fermions
+  - Rice-Mele model
+  - full counting statistics
