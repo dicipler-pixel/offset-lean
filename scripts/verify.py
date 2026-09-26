@@ -54,8 +54,14 @@ INFRA_FAILURE = re.compile(
     r"object file .* does not exist|invalid field", re.I)
 
 
+LAST_OUTPUT = ""
+
+
 def run(argv: list[str]) -> subprocess.CompletedProcess:
-    return subprocess.run(argv, cwd=ROOT, capture_output=True, text=True)
+    global LAST_OUTPUT
+    proc = subprocess.run(argv, cwd=ROOT, capture_output=True, text=True)
+    LAST_OUTPUT = " ".join(argv) + "\n" + proc.stdout + proc.stderr
+    return proc
 
 
 def strip_comments(text: str) -> str:
@@ -148,5 +154,16 @@ def main() -> int:
     return 0
 
 
+def annotate(message: str) -> None:
+    """Surface a failure as a GitHub error annotation (readable without the log)."""
+    flat = message.replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+    print(f"::error title=verify.py::{flat[:6000]}")
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except SystemExit as exc:
+        if exc.code not in (0, None):
+            annotate(str(exc.code) + "%0A" + LAST_OUTPUT[-5000:])
+        raise
