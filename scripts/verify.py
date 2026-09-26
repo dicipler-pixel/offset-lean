@@ -43,7 +43,7 @@ LIBRARY = [
 EXPECTED_LIBRARY_THEOREMS = 143
 EXPECTED_HEADLINE_THEOREMS = 7
 THEOREM_RE = re.compile(
-    r"^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+)?theorem\s+([A-Za-z0-9_'.]+)", re.M)
+    r"^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+)?theorem\s+([^\s:({\[]+)", re.M)
 NAMESPACE_RE = re.compile(r"^namespace\s+(\S+)", re.M)
 MATH_FAILURE = re.compile(
     r"unsolved goals|proved that the proposition.*false|tactic '.*' failed|"
