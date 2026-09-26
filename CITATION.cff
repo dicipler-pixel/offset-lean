@@ -16,3 +16,10 @@ keywords:
   - free fermions
   - Rice-Mele model
   - full counting statistics
+references:
+  - type: article
+    title: "The Offset Belongs to the Boundary"
+    authors:
+      - family-names: "Beasley"
+        given-names: "Jeromie"
+    doi: "10.5281/zenodo.22555919"
