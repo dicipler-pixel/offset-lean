@@ -6,7 +6,9 @@ authors:
     given-names: "Jeromie"
 version: 1.0.0
 date-released: 2026-09-26
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/dicipler-pixel/offset-lean"
 keywords:
   - Lean 4

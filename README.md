@@ -8,7 +8,8 @@
 ![Lean](https://img.shields.io/badge/Lean-v4.33.0-blue)
 ![Theorems](https://img.shields.io/badge/theorems-143_%2B_7_headline-2EA043)
 ![sorry](https://img.shields.io/badge/sorry-0-2EA043)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Code: MIT](https://img.shields.io/badge/code-MIT-lightgrey)
+![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)
 [![Paper DOI](https://img.shields.io/badge/paper-10.5281%2Fzenodo.22181748-blue)](https://doi.org/10.5281/zenodo.22181748)
 
 Jeromie Beasley
@@ -114,4 +115,4 @@ calibration and any cosmological reading are **outside** these proofs; see
 
 Citation metadata is in [`CITATION.cff`](CITATION.cff). The Lean code and
 scripts are released under the [MIT License](LICENSE); prose and figures under
-CC BY 4.0. How AI tools were used is stated in [`AI_USE.md`](AI_USE.md).
+[CC BY 4.0](LICENSE-CC-BY-4.0.md); see [`LICENSING.md`](LICENSING.md). How AI tools were used is stated in [`AI_USE.md`](AI_USE.md).
