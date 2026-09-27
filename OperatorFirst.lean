@@ -11,3 +11,4 @@ import OperatorFirst.FiniteCovariance
 import OperatorFirst.BandObstruction
 import OperatorFirst.LaurentBoundary
 import OperatorFirst.RiceMeleOddSymmetry
+import OperatorFirst.BoundaryModel

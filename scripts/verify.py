@@ -38,9 +38,9 @@ OUT = ROOT / "verification"
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
 LIBRARY = [
     "Offset", "OffsetFock", "OffsetEndpoint", "EndpointProgress", "EndpointTransfer",
-    "FiniteCovariance", "BandObstruction", "LaurentBoundary", "RiceMeleOddSymmetry",
+    "FiniteCovariance", "BandObstruction", "LaurentBoundary", "RiceMeleOddSymmetry", "BoundaryModel",
 ]
-EXPECTED_LIBRARY_THEOREMS = 143
+EXPECTED_LIBRARY_THEOREMS = 156
 EXPECTED_HEADLINE_THEOREMS = 7
 THEOREM_RE = re.compile(
     r"^\s*(?:@\[[^\]]*\]\s*)?(?:private\s+|protected\s+)?theorem\s+([^\s:({\[]+)", re.M)
@@ -144,8 +144,8 @@ def main() -> int:
             print(text)
             raise SystemExit(f"false control failed for the wrong reason: {path.name}")
         controls[path.stem] = "rejected"
-    if len(controls) < 13:
-        raise SystemExit(f"expected 13 false controls, found {len(controls)}")
+    if len(controls) < 15:
+        raise SystemExit(f"expected 15 false controls, found {len(controls)}")
     report["false_controls"] = controls
 
     (OUT / "report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")

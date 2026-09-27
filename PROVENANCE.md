@@ -50,4 +50,11 @@ earlier verification reports.
   earlier verifier scripts (`verify_offset.py`, `verify_endpoint.py`,
   `verify_endpoint_progress.py`, `verify_offset_completion.py`,
   `verify_laurent_boundary.py`) and `rice_mele_formal/FalseControl.lean`.
+- `OperatorFirst/BoundaryModel.lean` (13 theorems) and its two controls
+  `FalseControls/false_dispersion_growth.lean`, `false_onsite_sign.lean`: copied
+  unchanged from the `lean_boundary/` folder of the v31 reproduction archive of the
+  paper (also in `offset_proofs.zip`), pinned there to the same Mathlib commit as
+  the modules above. SHA-256
+  `f1d686fbfc6837d97d5675bf40fefa0fa0b330010e37243a3e9c4f0d15503c77`.
+  This repository's proof check is its first public record.
 - `scripts/verify.py`: one audit replacing those five scripts.

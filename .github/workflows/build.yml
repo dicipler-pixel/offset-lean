@@ -60,6 +60,7 @@ jobs:
                    OperatorFirst.EndpointProgress OperatorFirst.EndpointTransfer \
                    OperatorFirst.FiniteCovariance OperatorFirst.BandObstruction \
                    OperatorFirst.LaurentBoundary OperatorFirst.RiceMeleOddSymmetry \
+                   OperatorFirst.BoundaryModel \
                    OffsetLean.Headline; do
             echo "== $m"
             lake env leanchecker "$m"

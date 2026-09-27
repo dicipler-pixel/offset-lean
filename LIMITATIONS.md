@@ -30,9 +30,12 @@ are deliberate counterexamples that refute tempting but false inferences.
    theorem takes injectivity as a hypothesis.
 4. **All-size interpolation.** The unequal-hopping interpolation is formalised
    at three sites. The all-size version has a written proof in the paper. Lean
-   has the general boundary-column mechanism (`LaurentBoundary`) but not the
-   model-specific invariant-polynomial representation, block similarity or
-   chart hypotheses.
+   has the general boundary-column mechanism (`LaurentBoundary`) and the
+   explicit odd-boundary matrix at every size with its block similarity and
+   onsite chart (`BoundaryModel`). Still missing: the reflection and
+   hopping-sign conjugacies of the physical matrix, the invariant polynomial in
+   A, p, v built from them, and the step joining these to the degree bound
+   (the paper's all-size determinant theorem).
 5. **Hankel asymptotics.** The equal-hopping Fourier/Hankel reduction and its
    asymptotic theorem are not formalised.
 6. **Physical interpretation.** The determinant formulas are algebraic

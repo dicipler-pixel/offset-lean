@@ -6,7 +6,7 @@
 
 [![Lean proof check](https://github.com/dicipler-pixel/offset-lean/actions/workflows/build.yml/badge.svg)](https://github.com/dicipler-pixel/offset-lean/actions/workflows/build.yml)
 ![Lean](https://img.shields.io/badge/Lean-v4.33.0-blue)
-![Theorems](https://img.shields.io/badge/theorems-143_%2B_7_headline-2EA043)
+![Theorems](https://img.shields.io/badge/theorems-156_%2B_7_headline-2EA043)
 ![sorry](https://img.shields.io/badge/sorry-0-2EA043)
 ![Code: MIT](https://img.shields.io/badge/code-MIT-lightgrey)
 ![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey)
@@ -75,7 +75,8 @@ verified sources exactly. Grouped by subject:
 | **Finite covariance and band obstruction**: compressed projectors are Gram matrices, strict formation domain, exact band forces zero | `FiniteCovariance`, `BandObstruction` | 11 |
 | **Boundary-column degree mechanism**: Laurent coefficient bounds, determinant column budgets, one boundary column forces an affine polynomial | `LaurentBoundary` | 20 |
 | **Rice–Mele sign symmetry**: flipping every B-sublattice site sends hopping signs `(a, b) → (−a, −b)` and leaves the determinant unchanged | `RiceMeleOddSymmetry` | 4 |
-| | **Total** | **143** |
+| **The explicit odd-boundary matrix**: equation (9) at every finite size, entry degree bounds, the explicit basis change and its inverse, the determinant bound carried back to the original matrix, the onsite chart `i t + c/t`, the dispersion-chart identity | `BoundaryModel` | 13 |
+| | **Total** | **156** |
 
 ## How it is checked
 
@@ -83,10 +84,10 @@ Every push runs [the proof check](.github/workflows/build.yml) on GitHub:
 
 1. **Build**: every module compiles against Lean v4.33.0 and Mathlib `v4.33.0`.
 2. **Independent replay**: every module is re-checked by Lean's separate kernel checker.
-3. **Axiom audit**: every one of the 150 named theorems depends only on
+3. **Axiom audit**: every one of the 163 named theorems depends only on
    `propext`, `Classical.choice` and `Quot.sound`, the three standard axioms
    of Mathlib. No `sorry`, no project axioms, no `native_decide`.
-4. **False controls**: 13 deliberately false statements must fail to compile,
+4. **False controls**: 15 deliberately false statements must fail to compile,
    and fail for a mathematical reason, not a typo. This shows the checker can say no.
 
 The evidence (axiom log, control logs, `report.json` with the SHA-256 of every
