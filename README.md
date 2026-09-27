@@ -9,7 +9,7 @@
 ![Theorems](https://img.shields.io/badge/theorems-143_%2B_7_headline-2EA043)
 ![sorry](https://img.shields.io/badge/sorry-0-2EA043)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
-[![Paper DOI](https://img.shields.io/badge/paper-10.5281%2Fzenodo.22555919-blue)](https://doi.org/10.5281/zenodo.22555919)
+[![Paper DOI](https://img.shields.io/badge/paper-10.5281%2Fzenodo.22181748-blue)](https://doi.org/10.5281/zenodo.22181748)
 
 Jeromie Beasley
 
@@ -108,7 +108,7 @@ calibration and any cosmological reading are **outside** these proofs; see
 
 ## The paper
 
-*The Offset Belongs to the Boundary*, Jeromie Beasley. DOI [10.5281/zenodo.22555919](https://doi.org/10.5281/zenodo.22555919).
+*The Offset Belongs to the Boundary*, Jeromie Beasley. DOI [10.5281/zenodo.22181748](https://doi.org/10.5281/zenodo.22181748).
 
 ## Citation, licence and AI use
 
