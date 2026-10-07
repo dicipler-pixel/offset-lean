@@ -27,7 +27,7 @@ empty versus completely full:
 $$
 \operatorname{Tr} K_A \;=\; \log \det(1 - C_A) \;-\; \log \det C_A \;=\; \log P(\text{empty}) - \log P(\text{full}),
 \qquad
-\frac{P(\text{full}) - P(\text{empty})}{P(\text{full}) + P(\text{empty})} \;=\; \tanh\!\left(\frac{\text{offset}}{2}\right).
+\frac{P(\text{empty}) - P(\text{full})}{P(\text{empty}) + P(\text{full})} \;=\; \tanh\!\left(\frac{\text{offset}}{2}\right).
 $$
 
 The paper measures this number, shows that a symmetry of the cut arrangement
@@ -59,8 +59,8 @@ citing a theorem in the library.
 | 3 | `asymmetry_relative_error` | Perturbing each probability by at most a fraction `ε < 1` moves the asymmetry by at most `ε/(1 − ε)` |
 | 4 | `compression_formation_domain` | A compressed symmetric projector with both projected embeddings injective gives `det C > 0`, `det(1 − C) > 0`, asymmetry inside `(−1, 1)` |
 | 5 | `bounded_convergent_not_monotone` | Bounded and convergent does **not** imply monotone (a false step, refuted) |
-| 6 | `band_equation_forces_zero` | An exact band equation on infinitely many points forces both polynomial components to vanish |
-| 7 | `boundary_column_forces_affine` | A determinant with a single boundary column of top degree one is an affine polynomial |
+| 6 | `band_equation_forces_zero` | With both hoppings nonzero (`a·b ≠ 0`), an exact band equation on infinitely many points forces both polynomial components to vanish |
+| 7 | `boundary_column_forces_affine` | If a determinant with a single boundary column of top degree one equals `p(x)` for a polynomial `p` (coefficient map with no positive powers, `x` of top degree exactly one), then `p` has degree at most one |
 
 ## What the library contains
 

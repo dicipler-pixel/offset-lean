@@ -4,13 +4,13 @@ Stated so a reader can calibrate exactly what the Lean proofs establish.
 
 ## What is proved
 
-Finite algebra and conditional limit statements: exactly the 143 library
+Finite algebra and conditional limit statements: exactly the 156 library
 theorems and 7 headline theorems in this repository, under exactly the
 hypotheses written in each statement. Every one depends only on `propext`,
 `Classical.choice` and `Quot.sound`. There is no `sorry`, no project-defined
 axiom and no `native_decide` anywhere in `OperatorFirst/` or `OffsetLean/`.
 
-These are 143 formal statements, not 143 independent physical results. Several
+These are 156 formal statements, not 156 independent physical results. Several
 are deliberate counterexamples that refute tempting but false inferences.
 
 ## What is not proved here
@@ -32,8 +32,10 @@ are deliberate counterexamples that refute tempting but false inferences.
    at three sites. The all-size version has a written proof in the paper. Lean
    has the general boundary-column mechanism (`LaurentBoundary`) and the
    explicit odd-boundary matrix at every size with its block similarity and
-   onsite chart (`BoundaryModel`). Still missing: the reflection and
-   hopping-sign conjugacies of the physical matrix, the invariant polynomial in
+   onsite chart (`BoundaryModel`). Still missing: the reflection
+   conjugacy; the hopping-sign conjugacy is proved for the odd A/B block
+   (`RiceMeleOddSymmetry.hopping_sign_conjugacy`) but not yet carried to the
+   `BoundaryModel` matrix; the invariant polynomial in
    A, p, v built from them, and the step joining these to the degree bound
    (the paper's all-size determinant theorem).
 5. **Hankel asymptotics.** The equal-hopping Fourier/Hankel reduction and its
@@ -60,9 +62,9 @@ Some theorems exist to block a wrong step:
   gap-closing point (`critical_counterexample`).
 - Bounded and convergent does not imply monotone (`bounded_convergence_not_monotonicity`).
 - A shear with determinant one still fails the parity-eigenvector claim
-  (`plus_parity_not_eigenvector`).
+  (`shear_det_one_and_mixes`, `plus_parity_not_eigenvector`).
 
-The `FalseControls/` folder holds 13 statements that must fail to compile.
+The `FalseControls/` folder holds 15 statements that must fail to compile.
 
 ## Review status
 

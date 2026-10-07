@@ -1,6 +1,6 @@
 # Provenance
 
-Every file in `OperatorFirst/` is a byte-identical copy of the source in the
+Every file in `OperatorFirst/` except `BoundaryModel.lean` (see below) is a byte-identical copy of the source in the
 private research repository `dicipler-pixel/operator-first`, taken from branch
 `formal/rice-mele-odd-symmetry-2026-09-12` at commit
 `936cf1e8fe014c00a25bf508773f78328ba287c0` (13 September 2026). Across all
@@ -42,7 +42,7 @@ earlier verification reports.
 
 ## Files new in this repository
 
-- `OperatorFirst.lean`: imports the nine modules so `lake build` compiles all
+- `OperatorFirst.lean`: imports all ten modules so `lake build` compiles all
   of them. It replaces nothing; the research repository's root file of the same
   name holds different, unrelated core theorems and is not included here.
 - `OffsetLean/Headline.lean`: the seven headline statements.

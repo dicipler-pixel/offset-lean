@@ -18,9 +18,9 @@ What these statements do NOT say is recorded in `LIMITATIONS.md`: no
 infinite-chain Rice–Mele limit, no energy calibration, no spacetime metric and
 no cosmological-constant value is proved here.
 
-Throughout, `p` and `m` play the roles of the two formation probabilities
-(empty block and full block), `(m - p) / (m + p)` is their asymmetry and
-`log m - log p` is the offset.
+Throughout, `p` is the full-block probability `det C` and `m` the empty-block
+probability `det(1 - C)`, so `(m - p) / (m + p)` is their asymmetry and
+`log m - log p = Tr K_A` is the offset.
 -/
 
 open Filter

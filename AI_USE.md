@@ -6,6 +6,6 @@ write and repair Lean proofs, and organise this repository.
 
 No statement here rests on an AI's say-so. Every proof is checked by the Lean
 kernel and replayed by an independent kernel checker on every push, every
-theorem's axioms are audited, and 13 false statements must be rejected for the
+theorem's axioms are audited, and 15 false statements must be rejected for the
 check to pass. What the statements mean, and what they do not claim, is set
 out in plain words in `README.md` and `LIMITATIONS.md`.
